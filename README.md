@@ -108,6 +108,6 @@ science_semantic_search/
 
 └── tests/
 
-    ├── test_search\.py
+    ├── test_search.py
     
-    └── test_models\.py
+    └── test_models.py
