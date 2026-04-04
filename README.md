@@ -29,45 +29,85 @@
 # Структура проекта
 
 science_semantic_search/
-├── .gitignore
-├── README.md
-├── requirements.txt
-├── Dockerfile
-├── docker-compose.yml
-├── Makefile (опционально: make parse, make search, make run)
-│
-├── data/
-│   ├── raw/               # исходный json от парсера
-│   ├── processed/         # очищенные аннотации, эмбеддинги (npy)
-│   ├── synthetic/         # для будущих датасетов
-│   └── cache/             # кэш моделей HuggingFace
-│
-├── notebooks/
-│   ├── 01_parse_explore.ipynb
-│   ├── 02_embeddings_experiments.ipynb
-│   ├── 03_synthetic_dataset.ipynb      # (пункт 4)
-│   └── 04_reranker_training.ipynb      # (пункт 4)
-│
-├── src/
-│   ├── __init__.py
-│   ├── parser.py          # собирает json
-│   ├── preprocess.py      # очистка аннотаций
-│   ├── embeddings.py      # encode(), get_embeddings()
-│   ├── models.py          # Article, ArticleDatabase, SearchResult
-│   ├── search.py          # cosine_similarity, semantic_search()
-│   ├── reranker.py        # (будущий пункт 3)
-│   └── utils.py
-│
-├── scripts/
-│   ├── run_parser.py      # обертка для запуска из консоли
-│   ├── build_db.py        # из json → Database + эмбеддинги
-│   └── run_demo.py        # интерактивный поиск в консоли
-│
-├── telegram_bot/          # (будущий пункт 2)
-│   ├── bot.py
-│   └── handlers.py
-│
-└── tests/
-    ├── test_search.py
-    └── test_models.py
 
+├── .gitignore
+
+├── README.md
+
+├── requirements.txt
+
+├── Dockerfile
+
+├── docker-compose.yml
+
+├── Makefile (опционально: make parse, make search, make run)
+
+│
+
+├── data/
+
+│   ├── raw/               # исходный json от парсера
+
+│   ├── processed/         # очищенные аннотации, эмбеддинги (npy)
+
+│   ├── synthetic/         # для будущих датасетов
+
+│   └── cache/             # кэш моделей HuggingFace
+
+│
+
+├── notebooks/
+
+│   ├── 01_parse_explore.ipynb
+
+│   ├── 02_embeddings_experiments.ipynb
+
+│   ├── 03_synthetic_dataset.ipynb      # (пункт 4)
+
+│   └── 04_reranker_training.ipynb      # (пункт 4)
+
+│
+
+├── src/
+
+│   ├── __init__.py
+
+│   ├── parser.py          # собирает json
+
+│   ├── preprocess.py      # очистка аннотаций
+
+│   ├── embeddings.py      # encode(), get_embeddings()
+
+│   ├── models.py          # Article, ArticleDatabase, SearchResult
+
+│   ├── search.py          # cosine_similarity, semantic_search()
+
+│   ├── reranker.py        # (будущий пункт 3)
+
+│   └── utils.py
+
+│
+
+├── scripts/
+
+│   ├── run_parser.py      # обертка для запуска из консоли
+
+│   ├── build_db.py        # из json → Database + эмбеддинги
+
+│   └── run_demo.py        # интерактивный поиск в консоли
+
+│
+
+├── telegram_bot/          # (будущий пункт 2)
+
+│   ├── bot.py
+
+│   └── handlers.py
+
+│
+
+└── tests/
+
+    ├── test_search.py
+    
+    └── test_models.py
