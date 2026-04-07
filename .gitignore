@@ -1,2 +1,13 @@
 # JupyterNotebooks
 */.ipynb_checkpoints/*
+
+
+# Logs, raw data and models cache
+src/logs/*
+!src/logs/.gitkeep
+
+data/cache/*
+!data/cache/.gitkeep
+
+data/raw/*
+!data/raw/.gitkeep
