@@ -1,0 +1,11 @@
+name: ns_semantic_search
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.12
+  - requests
+  - beautifulsoup4
+  - fake-useragent
+  - pandas
+  - numpy

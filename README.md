@@ -34,7 +34,7 @@ science_semantic_search/
 
 ├── README.md
 
-├── requirements.txt
+├── environment.yml
 
 ├── Dockerfile
 
