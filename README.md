@@ -34,7 +34,7 @@ science_semantic_search/
 
 ├── README.md
 
-├── requirements.txt
+├── environment.yml
 
 ├── Dockerfile
 
@@ -48,11 +48,15 @@ science_semantic_search/
 
 │   ├── raw/               # исходный json от парсера
 
-│   ├── processed/         # очищенные аннотации, эмбеддинги (npy)
+│   ├── processed/         # очищенные аннотации
 
 │   ├── synthetic/         # для будущих датасетов
 
 │   └── cache/             # кэш моделей HuggingFace
+
+│
+
+├── models/          # эмбеддинги и reranker
 
 │
 
@@ -69,6 +73,8 @@ science_semantic_search/
 │
 
 ├── src/
+
+│   ├── logs/              # логи парсинга
 
 │   ├── __init__.py
 
@@ -107,7 +113,3 @@ science_semantic_search/
 │
 
 └── tests/
-
-    ├── test_search.py
-    
-    └── test_models.py
